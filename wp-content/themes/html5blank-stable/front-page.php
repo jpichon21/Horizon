@@ -18,6 +18,7 @@
 
     <link rel="stylesheet" href="https://use.typekit.net/zuv7hqs.css">
     <link rel="stylesheet" src="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" src="<?php echo get_template_directory_uri() . '/spectre.min.css'; ?>">
     <link rel="stylesheet" src="<?php echo get_template_directory_uri() . '/slick.css'; ?>">
