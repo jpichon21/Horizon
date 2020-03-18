@@ -1,0 +1,55 @@
+@import 'include-media.scss';
+
+/*******BREAKPOINTS********/
+$breakpoints: (small: 0px, xsmall: 345px, mobile: 435px, tablet: 768px, large: 1024px, xlarge: 1280px, cardbkp: 1298px, xxlarge: 1440px, footerbkp: 1680px, hirez: 1780px);
+
+/*******VARIABLES*********/
+
+
+/** LAYOUT **/
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body, a,p, span, li {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: auto;
+}
+
+.hidden{
+    display: none!important;
+}
+
+ul,a, li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a.active,
+a:active,
+a:focus,
+a:hover {
+    text-decoration: none !important;
+}
+
+.header.clear {
+    display: none;
+}
+
+.centered {
+    margin: 0 auto !important;
+}
+
+.container {
+    margin: 0 !important;
+    padding: 0 !important
+}
+
+.center-text {
+    text-align: center;
+}

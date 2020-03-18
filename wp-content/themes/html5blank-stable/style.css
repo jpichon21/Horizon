@@ -1,0 +1,39 @@
+/*******BREAKPOINTS********/
+/*******VARIABLES*********/
+/** LAYOUT **/
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden; }
+
+* {
+  box-sizing: border-box; }
+
+body, a, p, span, li {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto; }
+
+.hidden {
+  display: none !important; }
+
+ul, a, li {
+  text-decoration: none;
+  list-style-type: none; }
+
+a.active,
+a:active,
+a:focus,
+a:hover {
+  text-decoration: none !important; }
+
+.header.clear {
+  display: none; }
+
+.centered {
+  margin: 0 auto !important; }
+
+.container {
+  margin: 0 !important;
+  padding: 0 !important; }
+
+.center-text {
+  text-align: center; }
