@@ -11,7 +11,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Horizon</title>
+    <title>Horizon | Agence de Consulting </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -44,7 +44,7 @@
                         </div>
 
                         <ul class="white">
-                            <li><a href="#">QUI SOMMES-NOUS ?</a></li>
+                            <li><a href="#Enjeux">QUI SOMMES-NOUS ?</a></li>
                             <li><a href="#Offres">NOS OFFRES</a></li>
                             <li><a href="#Forces">NOS FORCES</a></li>
                             <li><a href="#Contact">CONTACT</a></li>
@@ -57,7 +57,7 @@
                     <p class="white"><?php echo get_field('description_header'); ?></p>
 
                     <?php $cta_header = get_field('cta_header');?>
-                    <a class="button white-button" href="<?php echo $cta_header['lien_cta']; ?>"><?php echo $cta_header['texte_cta']; ?></a>
+                    <a class="button white-button" href="#Offres"><?php echo $cta_header['texte_cta']; ?></a>
                 </div>
 
                 <div class="col-9 centered" id="bottomHeaderBanner">
@@ -76,13 +76,17 @@
         <!--------------------->
         <section id="References1">
             <div class="content col-9 centered white">
-            <?php $references_1 = get_field('references_1');?>
-            <p><?php echo $references_1['titre']; ?></p>
-            <img src="<?php echo esc_url($references_1['logo_1']['url']); ?>"  />
-            <img src="<?php echo esc_url($references_1['logo_2']['url']); ?>"  />
-            <img src="<?php echo esc_url($references_1['logo_3']['url']); ?>"  />
-            <img src="<?php echo esc_url($references_1['logo_4']['url']); ?>"  />
-            <img src="<?php echo esc_url($references_1['logo_5']['url']); ?>"  />
+                <div class="row columns">
+                    <div>
+                        <?php $references_1 = get_field('references_1');?>
+                        <p><?php echo $references_1['titre']; ?></p>
+                    </div>
+                        <img src="<?php echo esc_url($references_1['logo_1']['url']); ?>"  />
+                        <img src="<?php echo esc_url($references_1['logo_2']['url']); ?>"  /> 
+                        <img src="<?php echo esc_url($references_1['logo_3']['url']); ?>"  />
+                        <img src="<?php echo esc_url($references_1['logo_4']['url']); ?>"  />
+                        <img src="<?php echo esc_url($references_1['logo_5']['url']); ?>"  />
+                </div>
             </div>
         </section>
         <!--------------------->
@@ -105,33 +109,71 @@
         <!--------------------->
         <section id="Cibles">
             <div class="content col-9 centered white">
+            <?php $who_why = get_field('who_why');?>
 
-                <div class="columns">
+        
+                <div class="row columns">
                     <div class="col-5">
-                        <h2>Pour quoi ?</h2>
-                        <p>Parce qu’un <strong>point de vue extérieur</strong> est souvent le bienvenu, mais qu’une
-                            marque n’a pas
-                            forcément besoin d’aide opérationnelle, nous mettons notre expertise stratégique au service
-                            de vos enjeux etobjectifs sous forme de workshops, consulting, formations, livrables…</p>
+                        <h2><?php echo $who_why['titre_1']; ?></h2>
+                        <p><?php echo $who_why['description_1']; ?></p>
                     </div>
 
                     <div class="col-2 gutter"></div>
 
                     <div class="col-5">
-                        <h2>Pour qui ?</h2>
-                        <p>Pour tous les décisionnaires Com et Marketing qui ont besoin de prendre
-                            de la hauteur sur les sujets stratégiques. Pour les marques qui disposent
-                            d’une agence mais qui ont besoin d’un oeil externe et expert.</p>
-
-                        <p>Notre offre s’adresse aux : directions générales, directeurs du digital,
-                            start-ups et entrepreneurs, décisionnaires marketing / communication
-                            et chargés de communication.
-                        </p>
+                        <h2><?php echo $who_why['titre_2']; ?></h2>
+                        <p><?php echo $who_why['description_2']; ?></p>
+                        <p><?php echo $who_why['description_3']; ?></p>
                     </div>
                 </div>
 
-                <div class="columns">
+                <div class="row columns hybrid">
 
+                    <div class="image-container col-3">
+                        <img src="<?php echo esc_url($who_why['image']['url']); ?>"  />
+                    </div>
+    
+                    <div class="col-1 gutter"></div>
+                    <div class="list-container col-8 columns">
+                        <div class="col-4">
+                                <h4 class="yellow"> <?php echo $who_why['titre_liste_1']; ?></h4>
+
+                                <ul>
+                                    <?php if (have_rows('who_why_liste_1')) :
+                                        while (have_rows('who_why_liste_1')) : the_row(); ?>
+                                        <li><?php the_sub_field('element');?> </li>
+                                    <?php endwhile; ?>
+                                    <?php endif; ?>
+                                </ul>
+                        </div>
+
+                        <div class="col-4">
+                        <h4 class="yellow"> <?php echo $who_why['titre_liste_2']; ?></h4>
+                    
+                                <ul>
+                                    <?php if (have_rows('who_why_liste_2')) :
+                                        while (have_rows('who_why_liste_2')) : the_row(); ?>
+                                        <li><?php the_sub_field('element');?> </li>
+                                    <?php endwhile; ?>
+                                    <?php endif; ?>
+                                </ul>
+                        </div>
+
+                        
+                        <div class="col-4">
+                        <h4 class="yellow hide"> <?php echo $who_why['titre_liste_2']; ?></h4>
+                                <ul>
+                                    <?php if (have_rows('who_why_liste_3')) :
+                                        while (have_rows('who_why_liste_3')) : the_row(); ?>
+                                        <li><?php the_sub_field('element');?> </li>
+                                    <?php endwhile; ?>
+                                    <?php endif; ?>
+                                </ul>
+                        </div>
+                    </div>
+
+
+        
                 </div>
             </div>
         </section>
@@ -180,7 +222,7 @@
                 </ul>
 
 
-                <a class="button black-button" href="<?php echo $offre1['lien_cta']; ?>"><?php echo $offre1['texte_cta']; ?></a>
+                <a class="button black-button" href="#Contact"><?php echo $offre1['texte_cta']; ?></a>
 
             </div>
             <div class="offre image-container">
@@ -238,7 +280,7 @@
                     <?php } ?>
                 </ul>
 
-                <a class="button black-button" href="<?php echo $offre2['lien_cta']; ?>"><?php echo $offre2['texte_cta']; ?></a>
+                <a class="button black-button" href="#Contact"><?php echo $offre2['texte_cta']; ?></a>
 
             </div>
         </section>
@@ -250,7 +292,7 @@
 
             <div class="content offre center-text">
 
-                <h4> OFFRE #2 </h4>
+                <h4> OFFRE #3 </h4>
 
                     <h3 class="light"><?php echo $offre3['titre']; ?></h3>
                     <p><?php echo $offre3['sous_titre']; ?></p>
@@ -289,7 +331,7 @@
                     <?php } ?>
                 </ul>
 
-                <a class="button black-button" href="<?php echo $offre3['lien_cta']; ?>"><?php echo $offre3['texte_cta']; ?></a>
+                <a class="button black-button" href="#Contact"><?php echo $offre3['texte_cta']; ?></a>
 
             </div>
 
@@ -310,7 +352,7 @@
 
             <div class="content offre center-text">
 
-                <h4> OFFRE #2 </h4>
+                <h4> OFFRE #4 </h4>
 
                     <h3 class="light"><?php echo $offre4['titre']; ?></h3>
                     <p><?php echo $offre4['sous_titre']; ?></p>
@@ -322,6 +364,7 @@
                         <li> - <?php echo $offre4['element_1']; ?></li>
                     <?php } ?>
                     <?php if( $offre4['element_2']) { ?>
+
                         <li> - <?php echo $offre4['element_2']; ?></li>
                     <?php } ?>
                     <?php if( $offre4['element_3']) { ?>
@@ -349,7 +392,7 @@
                     <?php } ?>
                 </ul>
 
-                <a class="button black-button" href="<?php echo $offre4['lien_cta']; ?>"><?php echo $offre4['texte_cta']; ?></a>
+                <a class="button black-button" href="#Contact"><?php echo $offre4['texte_cta']; ?></a>
 
             </div>
         </section>
@@ -369,30 +412,30 @@
 
                 <div class="row columns container-logo">
                     <div class="col-3"><img src="<?php echo esc_url($reussite['logo_1']['url']); ?>"  /></div>
-                    <div class="col-3"><img src="<?php echo esc_url($reussite['logo_1']['url']); ?>"  /></div>
-                    <div class="col-3"><img src="<?php echo esc_url($reussite['logo_1']['url']); ?>"  /></div>
-                    <div class="col-3"><img src="<?php echo esc_url($reussite['logo_1']['url']); ?>"  /></div>
+                    <div class="col-3"><img src="<?php echo esc_url($reussite['logo_2']['url']); ?>"  /></div>
+                    <div class="col-3"><img src="<?php echo esc_url($reussite['logo_3']['url']); ?>"  /></div>
+                    <div class="col-3"><img src="<?php echo esc_url($reussite['logo_4']['url']); ?>"  /></div>
                 </div>
 
                 <div class="row columns container-logo">
-                    <div class="col-3"><img src="<?php echo esc_url($reussite['logo_1']['url']); ?>"  /></div>
-                    <div class="col-3"><img src="<?php echo esc_url($reussite['logo_1']['url']); ?>"  /></div>
-                    <div class="col-3"><img src="<?php echo esc_url($reussite['logo_1']['url']); ?>"  /></div>
-                    <div class="col-3"><img src="<?php echo esc_url($reussite['logo_1']['url']); ?>"  /></div>
+                    <div class="col-3"><img src="<?php echo esc_url($reussite['logo_5']['url']); ?>"  /></div>
+                    <div class="col-3"><img src="<?php echo esc_url($reussite['logo_6']['url']); ?>"  /></div>
+                    <div class="col-3"><img src="<?php echo esc_url($reussite['logo_7']['url']); ?>"  /></div>
+                    <div class="col-3"><img src="<?php echo esc_url($reussite['logo_8']['url']); ?>"  /></div>
                 </div>
 
                 <div class="row columns container-logo">
-                    <div class="col-3"><img src="<?php echo esc_url($reussite['logo_1']['url']); ?>"  /></div>
-                    <div class="col-3"><img src="<?php echo esc_url($reussite['logo_1']['url']); ?>"  /></div>
-                    <div class="col-3"><img src="<?php echo esc_url($reussite['logo_1']['url']); ?>"  /></div>
-                    <div class="col-3"><img src="<?php echo esc_url($reussite['logo_1']['url']); ?>"  /></div>
+                    <div class="col-3"><img src="<?php echo esc_url($reussite['logo_9']['url']); ?>"  /></div>
+                    <div class="col-3"><img src="<?php echo esc_url($reussite['logo_10']['url']); ?>"  /></div>
+                    <div class="col-3"><img src="<?php echo esc_url($reussite['logo_11']['url']); ?>"  /></div>
+                    <div class="col-3"><img src="<?php echo esc_url($reussite['logo_12']['url']); ?>"  /></div>
                 </div>
 
                 <div class="row columns container-logo">
-                    <div class="col-3"><img src="<?php echo esc_url($reussite['logo_1']['url']); ?>"  /></div>
-                    <div class="col-3"><img src="<?php echo esc_url($reussite['logo_1']['url']); ?>"  /></div>
-                    <div class="col-3"><img src="<?php echo esc_url($reussite['logo_1']['url']); ?>"  /></div>
-                    <div class="col-3"><img src="<?php echo esc_url($reussite['logo_1']['url']); ?>"  /></div>
+                    <div class="col-3"><img src="<?php echo esc_url($reussite['logo_13']['url']); ?>"  /></div>
+                    <div class="col-3"><img src="<?php echo esc_url($reussite['logo_14']['url']); ?>"  /></div>
+                    <div class="col-3"><img src="<?php echo esc_url($reussite['logo_15']['url']); ?>"  /></div>
+                    <div class="col-3"><img src="<?php echo esc_url($reussite['logo_16']['url']); ?>"  /></div>
                 </div>
             
             </div>
@@ -446,10 +489,10 @@
             <div class="content col-9 centered">
                 <nav>
                     <ul class="white">
-                        <li><a href="#">QUI SOMMES-NOUS</a></li>
-                        <li><a href="#">NOS OFFRES</a></li>
-                        <li><a href="#">NOS FORCES</a></li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#Enjeux">QUI SOMMES-NOUS ?</a></li>
+                        <li><a href="#Offres">NOS OFFRES</a></li>
+                        <li><a href="#Forces">NOS FORCES</a></li>
+                        <li><a href="#Contact">CONTACT</a></li>
                     </ul>
                 </nav>
 

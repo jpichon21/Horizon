@@ -61,6 +61,9 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
   font-size: 62.5% !important; }
+  @media (min-width: 1780px) {
+    html {
+      font-size: 76.5% !important; } }
 
 * {
   box-sizing: border-box; }
@@ -108,6 +111,9 @@ a:hover {
 .italic {
   font-style: italic; }
 
+.hide {
+  visibility: hidden; }
+
 h2 strong {
   font-family: 'Montserrat Medium', sans-serif;
   font-style: italic;
@@ -126,10 +132,20 @@ p strong {
   display: inline-block; }
   .button.white-button {
     background-color: #fff;
-    color: #181d25; }
+    color: #181d25;
+    transition: 0.5s ease; }
+    .button.white-button:active, .button.white-button:hover, .button.white-button a:focus {
+      background-color: #181d25;
+      color: #fff;
+      transition: 0.5s ease; }
   .button.black-button {
     background-color: #181d25;
-    color: #fff; }
+    color: #fff;
+    transition: 0.5s ease; }
+    .button.black-button:active, .button.black-button:hover, .button.black-button a:focus {
+      background-color: #fff;
+      color: #181d25;
+      transition: 0.5s ease; }
 
 /*** LAYOUT ***/
 #headerHero {
@@ -152,7 +168,7 @@ p strong {
         #headerHero header nav ul li a {
           color: #fff; }
   #headerHero .content {
-    padding-top: 22vh; }
+    padding-top: calc(100vh - 52%); }
     #headerHero .content h1 {
       font-family: 'Montserrat Medium', sans-serif;
       font-size: 3.6rem;
@@ -169,7 +185,7 @@ p strong {
     bottom: 0px;
     text-align: center; }
     #headerHero #bottomHeaderBanner p {
-      padding: 1rem 6rem;
+      padding: 0.8rem 4rem;
       font-size: 1.6rem;
       line-height: 2.2rem; }
     #headerHero #bottomHeaderBanner p:before {
@@ -202,6 +218,10 @@ p strong {
     max-width: 160px; }
   #References1 .content {
     padding: 8.9rem 0rem; }
+  #References1 .row {
+    text-align: center; }
+    #References1 .row p {
+      margin-top: 2rem; }
 
 #Enjeux {
   background: #fff;
@@ -216,12 +236,25 @@ p strong {
     padding-right: 5%; }
 
 #Cibles {
-  background: #181d25; }
+  background: #181d25;
+  background-image: url("img/content/cibles.jpg");
+  background-size: cover; }
   #Cibles .content {
     padding: 12.2rem 0rem; }
     #Cibles .content h2 {
       color: #fcd400;
       margin-bottom: 6.9rem; }
+  #Cibles .hybrid {
+    margin-top: 9rem; }
+  #Cibles .list-container {
+    border-top: 1px solid #fff; }
+    #Cibles .list-container ul {
+      margin: 0rem; }
+      #Cibles .list-container ul li {
+        margin-top: 0.2rem; }
+    #Cibles .list-container h4 {
+      font-family: 'Montserrat Medium', sans-serif;
+      margin: 6.5rem 0rem; }
 
 #Offres {
   background: #fff; }
@@ -277,7 +310,12 @@ p strong {
   #Reussite .container-title {
     margin-bottom: 13rem; }
   #Reussite .container-logo {
-    margin-bottom: 3rem; }
+    margin-bottom: 6rem; }
+    #Reussite .container-logo .col-3 {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
   #Reussite h2 {
     font-size: 4.7rem;
     line-height: 5.7rem; }
@@ -308,3 +346,5 @@ p strong {
     font-size: 1.4rem;
     line-height: 1.5rem;
     margin: 0rem 1.8rem; }
+  #Footer a, #Footer a:visited, #Footer a:hover, #Footer a:active, #Footer a:focus {
+    color: #fff !important; }

@@ -79,6 +79,9 @@ html {
     scroll-behavior: smooth;
     overflow-x: hidden;
     font-size: 62.5%!important;
+    @include media('>=hirez') {
+        font-size: 76.5%!important;
+    }
 }
 
 * {
@@ -140,6 +143,10 @@ a:hover {
     font-style: italic;
 }
 
+.hide{
+    visibility: hidden;
+}
+
 h2{
     strong{
     font-family: 'Montserrat Medium', sans-serif;
@@ -168,10 +175,22 @@ p{
     &.white-button{
         background-color: #fff;
         color: $color-darkblue;
+        transition: 0.5s ease;
+        &:active, &:hover, a:focus{
+            background-color: $color-darkblue;
+            color: #fff;
+            transition: 0.5s ease;
+        }
     }
     &.black-button{
         background-color: $color-darkblue;
         color: #fff;
+        transition: 0.5s ease;
+        &:active, &:hover, a:focus{
+            background-color: #fff;
+            color: $color-darkblue;
+            transition: 0.5s ease;
+        }
     }
 }
 
@@ -206,7 +225,7 @@ p{
         }
     }
     .content{
-        padding-top: 22vh;
+        padding-top: calc(100vh - 52%);
         h1{
             font-family: 'Montserrat Medium', sans-serif;
             font-size: 3.6rem;
@@ -226,7 +245,7 @@ p{
         bottom: 0px;
         text-align: center;
         p{
-            padding: 1rem 6rem;
+            padding: 0.8rem 4rem;
             font-size: 1.6rem;
             line-height: 2.2rem;
         }
@@ -272,6 +291,12 @@ p{
     .content{
         padding: 8.9rem 0rem;
     }
+    .row{
+        text-align: center;
+        p{
+            margin-top: 2rem;
+        }
+    }
 }
 
 #Enjeux{
@@ -293,11 +318,29 @@ p{
 
 #Cibles{
     background: $color-darkblue;
+    background-image: url('img/content/cibles.jpg');
+    background-size: cover;
     .content{
         padding: 12.2rem 0rem;
         h2{
             color: $color-yellow;
             margin-bottom: 6.9rem;
+        }
+    }
+    .hybrid{
+        margin-top: 9rem;
+    }
+    .list-container{
+        border-top: 1px solid #fff;
+        ul{
+            margin: 0rem;
+            li{
+                margin-top: 0.2rem;
+            }
+        }
+        h4{
+            font-family: 'Montserrat Medium', sans-serif;
+            margin: 6.5rem 0rem;
         }
     }
 }
@@ -377,7 +420,13 @@ p{
         margin-bottom: 13rem;
     }
     .container-logo{
-        margin-bottom: 3rem;
+        margin-bottom: 6rem;
+        .col-3{
+            text-align: center;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
     }
     h2{
         font-size: 4.7rem;
@@ -420,5 +469,8 @@ p{
             line-height: 1.5rem;
             margin: 0rem 1.8rem;
         }
+    }
+    a, a:visited, a:hover, a:active, a:focus{
+        color: #fff!important;
     }
 }
