@@ -352,15 +352,78 @@ p strong {
 #Contact {
   background-color: #fcd400;
   padding: 12rem 0rem; }
+  #Contact div.wpcf7-validation-errors, #Contact div.wpcf7-acceptance-missing, #Contact div.wpcf7-mail-sent-ok {
+    border: none;
+    font-size: 1.6rem; }
+  #Contact .wpcf7-response-output {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center; }
+  #Contact .wpcf7 {
+    margin: 0 auto; }
+    @media (max-width: 768px) {
+      #Contact .wpcf7 {
+        text-align: center; } }
+  #Contact form {
+    padding-top: 4.6rem;
+    font-size: 1.6rem; }
+    @media (max-width: 1024px) {
+      #Contact form .col-6,
+      #Contact form .col-12 {
+        margin-bottom: 1.8rem; } }
+    #Contact form .row {
+      margin-bottom: 3.6rem; }
+      @media (max-width: 1024px) {
+        #Contact form .row {
+          margin-bottom: 0rem; } }
+    #Contact form textarea,
+    #Contact form input[type=submit] {
+      width: 100%; }
+    #Contact form textarea,
+    #Contact form input[type=submit],
+    #Contact form input {
+      border: none;
+      padding: 1rem 2rem;
+      outline: none;
+      background-color: #f0f0f0;
+      width: 100%; }
+    #Contact form input[type=submit] {
+      background-color: #181d25;
+      color: #fff;
+      transition: 0.5s ease;
+      font-weight: 600;
+      font-family: 'Montserrat Light', sans-serif;
+      font-size: 1.8rem;
+      padding: 1.6rem;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box; }
 
 #Footer {
   background-color: #181d25;
   padding: 2.4rem; }
-  #Footer ul li {
-    font-family: 'Montserrat Medium', sans-serif;
-    display: inline-block;
-    font-size: 1.4rem;
-    line-height: 1.5rem;
-    margin: 0rem 1.8rem; }
+  #Footer ul {
+    margin-left: 0rem; }
+    #Footer ul li {
+      font-family: 'Montserrat Medium', sans-serif;
+      display: inline-block;
+      font-size: 1.4rem;
+      line-height: 1.5rem;
+      margin: 0rem 1.8rem;
+      margin-left: 0rem; }
   #Footer a, #Footer a:visited, #Footer a:hover, #Footer a:active, #Footer a:focus {
     color: #fff !important; }
+  #Footer #footerElements {
+    float: right; }
+  #Footer nav, #Footer #footerElements {
+    display: inline-block; }
+    #Footer nav img, #Footer nav p, #Footer #footerElements img, #Footer #footerElements p {
+      display: inline-block; }
+    #Footer nav p, #Footer #footerElements p {
+      font-family: 'Montserrat Light', sans-serif;
+      color: #fff;
+      font-family: 1.3rem;
+      line-height: 2.3rem;
+      margin: 0rem;
+      margin-left: 2rem;
+      vertical-align: bottom; }

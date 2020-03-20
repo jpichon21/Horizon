@@ -480,14 +480,22 @@
             </section>
             <!--------------->
 
-        
-        <!--------------->
+        <!----------------------------------->
         <section id="Contact">
-            <div class="content col-9 centered">
+                <div class="content column col-9 centered">
 
-            </div>
-        </section>
-        <!--------------->
+                    <div class="row columns">
+                        <div class="col-6 centered text-center">
+                            <h3 class="light"><?php echo get_field('titre_contact'); ?><h3>
+                        </div>
+                    </div>
+
+                    <div class="columns">
+                        <?php echo get_field('contact_form'); ?>
+                    </div>
+                </div>
+            </section>
+            <!----------------------------------->
 
         <!--------------->
         <footer id="Footer">
@@ -500,6 +508,12 @@
                         <li><a href="#Contact">CONTACT</a></li>
                     </ul>
                 </nav>
+
+                <div id="footerElements">
+                        <?php $footerlogo = get_field('logo_footer', 'options'); ?>
+                        <a href="#"><img id="footerlogo" src="<?php echo esc_url($footerlogo['url']); ?>" alt="<?php echo esc_attr($footerlogo['alt']); ?>" /></a>
+                        <p>© Braaxe - Tous droits reservés</p>
+                </div>
 
             </div>
         </footer>
