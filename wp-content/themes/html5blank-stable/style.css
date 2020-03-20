@@ -215,7 +215,8 @@ p strong {
   #References1 p, #References1 img {
     display: inline-block; }
   #References1 img {
-    max-width: 160px; }
+    max-width: 16rem;
+    margin: 0rem 0.2rem; }
   #References1 .content {
     padding: 8.9rem 0rem; }
   #References1 .row {
@@ -270,6 +271,21 @@ p strong {
   padding: 12.1rem 9.1rem;
   display: inline-block;
   width: 50%; }
+  .offre .paint {
+    display: inline-block;
+    position: relative;
+    z-index: 1; }
+    .offre .paint:before {
+      content: ' ';
+      position: absolute;
+      height: 1.4rem;
+      width: 100%;
+      bottom: 0;
+      z-index: -1; }
+    .offre .paint.paint-white:before {
+      background-color: #fff; }
+    .offre .paint.paint-yellow:before {
+      background-color: #fcd400; }
   .offre h5 {
     font-family: 'Montserrat Medium', sans-serif;
     font-size: 1.9rem;

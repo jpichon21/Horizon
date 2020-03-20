@@ -197,7 +197,7 @@
             <div class="content offre center-text">
                 <h4> OFFRE #1 </h4>
 
-                    <h3 class="light"><?php echo $offre1['titre']; ?></h3>
+                    <h3 class="light paint paint-white"><?php echo $offre1['titre']; ?></h3>
                     <p><?php echo $offre1['sous_titre']; ?></p>
 
                 <h5>Offre</h5>
@@ -243,7 +243,7 @@
 
                 <h4> OFFRE #2 </h4>
 
-                    <h3 class="light"><?php echo $offre2['titre']; ?></h3>
+                <h3 class="light paint paint-yellow"><?php echo $offre2['titre']; ?></h3>
                     <p><?php echo $offre2['sous_titre']; ?></p>
 
                 <h5>Offre</h5>
@@ -294,7 +294,7 @@
 
                 <h4> OFFRE #3 </h4>
 
-                    <h3 class="light"><?php echo $offre3['titre']; ?></h3>
+                    <h3 class="light paint paint-yellow"><?php echo $offre3['titre']; ?></h3>
                     <p><?php echo $offre3['sous_titre']; ?></p>
 
                 <h5>Offre</h5>
@@ -354,7 +354,7 @@
 
                 <h4> OFFRE #4 </h4>
 
-                    <h3 class="light"><?php echo $offre4['titre']; ?></h3>
+                    <h3 class="light paint paint-white"><?php echo $offre4['titre']; ?></h3>
                     <p><?php echo $offre4['sous_titre']; ?></p>
 
                 <h5>Offre</h5>

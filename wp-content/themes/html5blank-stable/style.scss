@@ -286,7 +286,8 @@ p{
         display: inline-block;
     }
     img{
-        max-width: 160px;
+        max-width: 16rem;
+        margin: 0rem 0.2rem;
     }
     .content{
         padding: 8.9rem 0rem;
@@ -363,6 +364,25 @@ p{
     padding: 12.1rem 9.1rem;
     display: inline-block;
     width: 50%;
+    .paint{
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        &:before{
+            content: ' ';
+            position: absolute;
+            height: 1.4rem;
+            width: 100%;
+            bottom: 0;
+            z-index: -1;
+        }
+        &.paint-white:before{
+            background-color: #fff;
+        }
+        &.paint-yellow:before{
+            background-color: $color-yellow;
+        }
+    }
     h5{
         font-family: 'Montserrat Medium', sans-serif;
         font-size: 1.9rem;
