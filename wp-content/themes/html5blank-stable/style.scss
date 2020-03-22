@@ -162,8 +162,8 @@ nav{
                 font-weight: normal;
                 transition: 0.5s ease;
             }
-            a:hover{
-                font-weight: bold;
+            a:hover, a:focus, a:active{
+                color: $color-yellow !important;
                 transition: 0.5s ease;
             }
         }
@@ -764,14 +764,23 @@ p{
             }
         }
     }
-    a, a:visited, a:hover, a:active, a:focus{
+    a, a:visited{
         color: #fff!important;
+        transition: 0.5s ease;
     }
+    a:hover, a:active, a:focus{
+        color: $color-yellow!important;
+        transition: 0.5s ease;
+    }
+    
     #footerElements{
         float: right;
         @include media('<=tablet') {
             float: none;
         }
+    }
+    #footerlogo{
+        max-width: 10rem;
     }
     nav, #footerElements{
         display: inline-block;

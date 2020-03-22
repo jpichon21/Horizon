@@ -125,8 +125,8 @@ nav ul li a {
   font-weight: normal;
   transition: 0.5s ease; }
 
-nav ul li a:hover {
-  font-weight: bold;
+nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
+  color: #fcd400 !important;
   transition: 0.5s ease; }
 
 h2 strong {
@@ -587,13 +587,19 @@ p strong {
         #Footer ul li {
           display: block;
           margin: 1.6rem auto; } }
-  #Footer a, #Footer a:visited, #Footer a:hover, #Footer a:active, #Footer a:focus {
-    color: #fff !important; }
+  #Footer a, #Footer a:visited {
+    color: #fff !important;
+    transition: 0.5s ease; }
+  #Footer a:hover, #Footer a:active, #Footer a:focus {
+    color: #fcd400 !important;
+    transition: 0.5s ease; }
   #Footer #footerElements {
     float: right; }
     @media (max-width: 768px) {
       #Footer #footerElements {
         float: none; } }
+  #Footer #footerlogo {
+    max-width: 10rem; }
   #Footer nav, #Footer #footerElements {
     display: inline-block; }
     #Footer nav img, #Footer nav p, #Footer #footerElements img, #Footer #footerElements p {

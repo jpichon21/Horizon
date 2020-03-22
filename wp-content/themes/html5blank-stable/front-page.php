@@ -343,7 +343,7 @@
             </div>
 
             <div class="offre image-container">
-                <img src="<?php echo esc_url($offre2['image']['url']); ?>"  />
+                <img src="<?php echo esc_url($offre3['image']['url']); ?>"  />
             </div>
 
         </section>
@@ -352,6 +352,7 @@
         <!--------------->
         <section id="Offre4" class="section-offre">
         <?php $offre4 = get_field('contenu_offre_4');?>
+      
 
             <div class="offre image-container">
                 <img src="<?php echo esc_url($offre4['image']['url']); ?>"  />
