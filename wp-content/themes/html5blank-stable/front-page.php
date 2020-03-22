@@ -188,15 +188,17 @@
         <section id="Offres">
             <div class="content col-9 centered black center-text">
             <?php $nos_offres = get_field('nos_offres');?>
-                <h2><?php echo $nos_offres['titre']; ?></h2>
+                <h2 class="light"><?php echo $nos_offres['titre']; ?></h2>
                 <p><?php echo $nos_offres['texte_1']; ?></p>
                 <p><?php echo $nos_offres['texte_2']; ?></p>
                 <p><?php echo $nos_offres['texte_3']; ?></p>
             </div>
-        </section>
         
+        </section>
+    
         <!--------------->
         <section id="Offre1" class="section-offre">
+        <div id="Placeholder"><div class="triangle"></div></div>
         <?php $offre1 = get_field('contenu_offre_1');?>
 
             <div class="content offre center-text">
