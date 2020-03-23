@@ -19,19 +19,19 @@
 
 // ** Réglages MySQL - Votre hébergeur doit vous fournir ces informations. ** //
 /** Nom de la base de données de WordPress. */
-define('DB_NAME', 'votre_nom_de_bdd');
+define( 'DB_NAME', 'Horizon' );
 
 /** Utilisateur de la base de données MySQL. */
-define('DB_USER', 'votre_utilisateur_de_bdd');
+define( 'DB_USER', 'root' );
 
 /** Mot de passe de la base de données MySQL. */
-define('DB_PASSWORD', 'votre_mdp_de_bdd');
+define( 'DB_PASSWORD', '' );
 
 /** Adresse de l’hébergement MySQL. */
-define('DB_HOST', 'localhost');
+define( 'DB_HOST', 'localhost' );
 
 /** Jeu de caractères à utiliser par la base de données lors de la création des tables. */
-define('DB_CHARSET', 'utf8');
+define( 'DB_CHARSET', 'utf8mb4' );
 
 /** Type de collation de la base de données.
   * N’y touchez que si vous savez ce que vous faites.
@@ -49,14 +49,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
+define( 'AUTH_KEY',         's>0B)YP`2[,M+Fy/)JZp;6$ v>h`dv&D4U,5Uo7+CJ II=q5Xb_SU0r/ CTT-(0i' );
+define( 'SECURE_AUTH_KEY',  '1?BP#u{K#:p/!@p)ONAv |SP~}Qr:Y1J/53qbq1_kdQr}){J.seHtUrnwas5_*=<' );
+define( 'LOGGED_IN_KEY',    '{UdO25p!f~[h^|&5dg8PkxCQXbR Su>B dQ9UM%{&wawoyNP]*fM?kKqd#Qf+j3G' );
+define( 'NONCE_KEY',        '0[Tg.209qj;&m4?wjI/y~KIa|Qgpo_!<A-aGg-(&P?+b*Y[bRhq%+9(%L9Dd ?!R' );
+define( 'AUTH_SALT',        's?$C.(Yz>Q{B&8BTKg!Suq7#`}]E4KbK%*Z1V.L@GX+cTk9w%UCo+FAei>JZoZQu' );
+define( 'SECURE_AUTH_SALT', 'gDDoRgojIL2zhc4wO)jS[WP9_|7C}d5vBZl/lER5`=D;&AO)<JxknYEPhs[LbI<j' );
+define( 'LOGGED_IN_SALT',   '0*FMkW$Zj47AkZLHUM@Zd(kx}(kcyAzDAODnE^rd7VO?]5 /<,_6q`*y4d>]{0uK' );
+define( 'NONCE_SALT',       ' V$MM {eUHzh:63d.Au8#tfgUVVRj&)}Sa`*^V~%PyHtJ!X@H<s>Gr5_gPycB=DB' );
 /**#@-*/
 
 /**
