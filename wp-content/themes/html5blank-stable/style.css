@@ -203,6 +203,9 @@ p strong {
     @media (max-width: 1440px) {
       #headerHero .content {
         padding-top: calc(100vh - 54%); } }
+    @media (max-width: 1024px) {
+      #headerHero .content {
+        padding-top: 20vh; } }
     @media (max-width: 768px) {
       #headerHero .content {
         padding-top: 20vh; } }
@@ -318,15 +321,15 @@ p strong {
   background: #181d25;
   background-image: url("img/content/cibles.jpg");
   background-size: cover; }
-  @media (max-width: 435px) {
+  @media (max-width: 768px) {
     #Cibles .col-5, #Cibles .col-3, #Cibles .col-4 {
       width: 100%; } }
   #Cibles .col-5 {
     margin-bottom: 6.9rem; }
-  @media (max-width: 435px) {
+  @media (max-width: 768px) {
     #Cibles .gutter {
       display: none; } }
-  @media (max-width: 435px) {
+  @media (max-width: 768px) {
     #Cibles .hide {
       display: none; } }
   #Cibles .content {
@@ -347,7 +350,7 @@ p strong {
         margin-top: 0rem; } }
   #Cibles .list-container {
     border-top: 1px solid #fff; }
-    @media (max-width: 435px) {
+    @media (max-width: 768px) {
       #Cibles .list-container {
         border: none; } }
     #Cibles .list-container ul {

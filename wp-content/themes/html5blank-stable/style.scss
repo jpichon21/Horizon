@@ -273,6 +273,9 @@ p{
         @include media('<=xxlarge') {
             padding-top: calc(100vh - 54%);
         }
+        @include media('<=large') {
+            padding-top: 20vh;
+        }
         @include media('<=tablet') {
             padding-top: 20vh;
         }
@@ -417,7 +420,7 @@ p{
     background-image: url('img/content/cibles.jpg');
     background-size: cover;
     .col-5, .col-3, .col-4{
-        @include media('<=mobile') {
+        @include media('<=tablet') {
             width: 100%;
         }
     }
@@ -425,12 +428,12 @@ p{
         margin-bottom: 6.9rem;
     }
     .gutter{
-        @include media('<=mobile') {
+        @include media('<=tablet') {
             display: none;
         }
     }
     .hide{
-            @include media('<=mobile') {
+            @include media('<=tablet') {
                 display: none;
             }
     }
@@ -455,7 +458,7 @@ p{
     }
     .list-container{
         border-top: 1px solid #fff;
-        @include media('<=mobile') {
+        @include media('<=tablet') {
             border: none;
         }
         ul{
