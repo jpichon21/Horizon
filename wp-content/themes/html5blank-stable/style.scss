@@ -10,14 +10,20 @@ $color-darkblue: #181d25;
 /*********FONTS*******/
 @font-face {
     font-family: 'Montserrat ExtraLight';
-    src: url('../html5blank-stable/fonts/Montserrat-ExtraLight.ttf') format('ttf');
+    src: 
+        url('../html5blank-stable/fonts/Montserrat-ExtraLight.ttf') format('ttf'),
+        url('../html5blank-stable/fonts/Montserrat-ExtraLight.woff') format('woff'),
+        url('../html5blank-stable/fonts/Montserrat-ExtraLight.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Montserrat ExtraLight Italic';
-    src: url('../html5blank-stable/fonts/Montserrat-ExtraLightItalic.ttf') format('ttf');
+    src: 
+        url('../html5blank-stable/fonts/Montserrat-ExtraLightItalic.ttf') format('ttf'),
+        url('../html5blank-stable/fonts/Montserrat-ExtraLightItalic.woff') format('woff'),
+        url('../html5blank-stable/fonts/Montserrat-ExtraLightItalic.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -25,49 +31,63 @@ $color-darkblue: #181d25;
 
 @font-face {
     font-family: 'Montserrat Regular';
-    src: url('../html5blank-stable/fonts/Montserrat-Regular.ttf') format('ttf');
+    src:  url('../html5blank-stable/fonts/Montserrat-Regular.ttf') format('ttf'),
+    url('../html5blank-stable/fonts/Montserrat-Regular.woff') format('woff'),
+    url('../html5blank-stable/fonts/Montserrat-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Montserrat Light';
-    src: url('../html5blank-stable/fonts/Montserrat-Light.ttf') format('ttf');
+    src:  url('../html5blank-stable/fonts/Montserrat-Light.ttf') format('ttf'),
+    url('../html5blank-stable/fonts/Montserrat-Light.woff') format('woff'),
+    url('../html5blank-stable/fonts/Montserrat-Light.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Montserrat Light Italic';
-    src: url('../html5blank-stable/fonts/Montserrat-LightItalic.ttf') format('ttf');
+    src:  url('../html5blank-stable/fonts/Montserrat-LightItalic.ttf') format('ttf'),
+    url('../html5blank-stable/fonts/Montserrat-LightItalic.woff') format('woff'),
+    url('../html5blank-stable/fonts/Montserrat-LightItalic.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Montserrat Medium';
-    src: url('../html5blank-stable/fonts/Montserrat-Medium.ttf') format('ttf');
+    src:  url('../html5blank-stable/fonts/Montserrat-Medium.ttf') format('ttf'),
+    url('../html5blank-stable/fonts/Montserrat-Medium.woff') format('woff'),
+    url('../html5blank-stable/fonts/Montserrat-Medium.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Montserrat Medium Italic';
-    src: url('../html5blank-stable/fonts/Montserrat-MediumItalic.ttf') format('ttf');
+    src:  url('../html5blank-stable/fonts/Montserrat-MediumItalic.ttf') format('ttf'),
+    url('../html5blank-stable/fonts/Montserrat-MediumItalic.woff') format('woff'),
+    url('../html5blank-stable/fonts/Montserrat-MediumItalic.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Montserrat SemiBold';
-    src: url('../html5blank-stable/fonts/Montserrat-Medium.ttf') format('ttf');
+    src:  url('../html5blank-stable/fonts/Montserrat-Medium.ttf') format('ttf'),
+    url('../html5blank-stable/fonts/Montserrat-Medium.woff') format('woff'),
+    url('../html5blank-stable/fonts/Montserrat-Medium.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Montserrat SemiBoldItalic';
-    src: url('../html5blank-stable/fonts/Montserrat-SemiBoldItalic.ttf') format('ttf');
+    src:  url('../html5blank-stable/fonts/Montserrat-SemiBoldItalic.ttf') format('ttf'),
+    url('../html5blank-stable/fonts/Montserrat-SemiBoldItalic.woff') format('woff'),
+    url('../html5blank-stable/fonts/Montserrat-SemiBoldItalic.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -78,9 +98,9 @@ $color-darkblue: #181d25;
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
-    font-size: 62.5%!important;
+    font-size: 63.5%!important;
     @include media('<=xxlarge') {
-        font-size: 52.5%!important;
+        font-size: 55.5%!important;
     }
     @include media('>=hirez') {
         font-size: 76.5%!important;
@@ -159,7 +179,7 @@ nav{
     ul{
         li{
             a{
-                font-weight: normal;
+                font-family: 'Montserrat SemiBold', sans-serif;
                 transition: 0.5s ease;
             }
             a:hover, a:focus, a:active{
@@ -250,13 +270,12 @@ p{
         nav{
             height: 80px;
             padding: 1.2rem 0px;
-
             ul{
                 float: right;
                 li{
                     display: inline-block;
                     font-family: 'Montserrat Medium', sans-serif;
-                    font-size: 1.4rem;
+                    font-size: 1.5rem;
                     margin: 0rem 2.0rem;
                     @include media('<=tablet') {
                         margin: 0rem 1.0rem;
@@ -281,6 +300,7 @@ p{
         }
         @include media('<=mobile') {
             padding-top: 10vh;
+            text-align: center;
         }
         h1{
             font-family: 'Montserrat Medium', sans-serif;
@@ -291,11 +311,11 @@ p{
         p{
             font-family: 'Montserrat ExtraLight', sans-serif;
             font-size: 4.7rem;
-            line-height: 4.7rem;  
+            line-height: 5.6rem;  
             margin: 2rem 0rem 4rem 0rem;  
             @include media('<=tablet') {
                 font-size: 2.7rem;
-                line-height: 2.7rem;
+                line-height: 3.6rem;
             }
         }
     }
@@ -313,6 +333,7 @@ p{
             font-size: 1.6rem;
             line-height: 2.2rem;
             @include media('<=mobile') {
+                padding: 0rem 4rem;
                 margin-bottom: 0rem;
             }
         }
