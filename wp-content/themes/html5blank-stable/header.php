@@ -10,9 +10,9 @@
 	<!---------------------------------------->
 	<!--- DEVELOPPEMENT PAR NCP MULTIMEDIA --->
 	<!------https://ncpmultimedia.com/-------->
+	<!------mail: ncpmedia21@gmail.com-------->
 	<!---------------------------------------->
-	<!---------------------------------------->
-
+	<!----------------------------------------> 
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162007895-1"></script>
@@ -23,7 +23,6 @@
 			gtag('config', 'UA-162007895-1');
 		</script>
 		<!-- -->
-
 
 		<meta charset="<?php bloginfo('charset'); ?>">
 		<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
