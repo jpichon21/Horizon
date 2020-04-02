@@ -56,6 +56,18 @@
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'Akrobat Regular';
+  src: url("../html5blank-stable/fonts/Akrobat-Regular.otf") format("otf"), url("../html5blank-stable/fonts/Akrobat-Regular.woff") format("woff"), url("../html5blank-stable/fonts/Akrobat-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Akrobat Bold';
+  src: url("../html5blank-stable/fonts/Akrobat-Bold.otf") format("otf"), url("../html5blank-stable/fonts/Akrobat-Bold.woff") format("woff"), url("../html5blank-stable/fonts/Akrobat-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
 /** BASE **/
 html {
   scroll-behavior: smooth;
@@ -624,3 +636,52 @@ p strong {
       @media (max-width: 768px) {
         #Footer nav p, #Footer #footerElements p {
           margin: 2.2rem auto; } }
+
+#infosForm {
+  min-height: 100vh;
+  background-image: url("img/content/form-bg.png");
+  background-size: cover; }
+  #infosForm h1, #infosForm h2 {
+    font-family: benton-sans, sans-serif;
+    font-weight: 600;
+    font-style: medium; }
+  #infosForm p, #infosForm ul, #infosForm li, #infosForm h4 {
+    font-family: 'Akrobat Regular', sans-serif; }
+    #infosForm p strong, #infosForm ul strong, #infosForm li strong, #infosForm h4 strong {
+      font-family: 'Akrobat Bold', sans-serif; }
+  #infosForm ul {
+    margin-bottom: 5.2rem; }
+  #infosForm .content {
+    padding-top: 12vh; }
+  #infosForm h1 {
+    font-size: 5.6rem;
+    line-height: 6.0rem; }
+  #infosForm h2 {
+    font-size: 2.4rem;
+    line-height: 5.2rem;
+    border-bottom: 1px solid black; }
+  #infosForm h4 {
+    font-size: 1.8rem;
+    text-transform: uppercase; }
+    #infosForm h4:after {
+      content: '';
+      border-bottom: 1px solid black;
+      display: inline-block;
+      height: 2px;
+      width: calc(100% - 20.4rem);
+      margin-left: 2rem; }
+  #infosForm p, #infosForm li {
+    font-size: 2.2rem;
+    line-height: 2.6rem; }
+  #infosForm li {
+    margin: 2rem 0rem; }
+    #infosForm li:before {
+      content: '';
+      display: inline-block;
+      background-image: url("img/icons/true-icon.png");
+      background-repeat: no-repeat;
+      height: 21px;
+      width: 21px;
+      margin-right: 0.8rem; }
+  #infosForm p {
+    margin-top: 3.2rem; }

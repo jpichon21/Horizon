@@ -8,6 +8,8 @@ $color-yellow: #fcd400;
 $color-darkblue: #181d25;
 
 /*********FONTS*******/
+
+
 @font-face {
     font-family: 'Montserrat ExtraLight';
     src: 
@@ -92,7 +94,23 @@ $color-darkblue: #181d25;
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Akrobat Regular';
+    src:  url('../html5blank-stable/fonts/Akrobat-Regular.otf') format('otf'),
+    url('../html5blank-stable/fonts/Akrobat-Regular.woff') format('woff'),
+    url('../html5blank-stable/fonts/Akrobat-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: 'Akrobat Bold';
+    src:  url('../html5blank-stable/fonts/Akrobat-Bold.otf') format('otf'),
+    url('../html5blank-stable/fonts/Akrobat-Bold.woff') format('woff'),
+    url('../html5blank-stable/fonts/Akrobat-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /** BASE **/
 html {
@@ -827,5 +845,70 @@ p{
                 margin: 2.2rem auto;
             }
         }
+    }
+}
+
+#infosForm{
+    min-height: 100vh;
+    background-image: url('img/content/form-bg.png');
+    background-size: cover;
+    h1, h2{
+        font-family: benton-sans, sans-serif;
+        font-weight: 600;
+        font-style: medium;
+   
+    }
+    p, ul, li, h4{
+        font-family: 'Akrobat Regular', sans-serif;
+        strong{
+            font-family: 'Akrobat Bold', sans-serif;
+        }
+    }
+    ul{
+        margin-bottom: 5.2rem;
+    }
+    .content{
+        padding-top: 12vh;
+    }
+    h1{
+        font-size: 5.6rem;
+        line-height: 6.0rem;
+    }
+    h2{
+        font-size: 2.4rem;
+        line-height: 5.2rem;
+        border-bottom: 1px solid black;
+    }
+    h4{
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        &:after{
+            content: '';
+            border-bottom: 1px solid black;
+            display: inline-block;
+            height: 2px;
+            width: calc(100% - 20.4rem);
+            margin-left: 2rem;
+        }
+    }
+    p, li{
+        font-size: 2.2rem;
+        line-height: 2.6rem;
+    }
+    li{
+        margin: 2rem 0rem;
+     
+        &:before{
+            content: '';
+            display: inline-block;
+            background-image: url('img/icons/true-icon.png');
+            background-repeat: no-repeat;
+            height: 21px;
+            width: 21px;
+            margin-right: 0.8rem;
+        }
+    }
+    p{
+        margin-top: 3.2rem;
     }
 }
