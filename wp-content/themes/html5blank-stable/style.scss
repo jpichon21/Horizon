@@ -713,9 +713,12 @@ p{
     }
 }
 
-#Contact {
+#Contact{
     background-color: $color-yellow;
     padding: 12rem 0rem;
+}
+
+#Contact {
     @include media('<=mobile') {
         padding: 6rem 0rem;
     }
@@ -785,6 +788,172 @@ p{
     }
 }
 
+#infosForm {
+    .form{
+        background-color: #fff;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        label{
+            font-family: benton-sans, sans-serif;
+            font-weight: 600;
+        }
+    }
+    @include media('<=mobile') {
+        padding: 6rem 0rem;
+    }
+    .col-6{
+        @include media('<=mobile') {
+            width: 100%;
+        }
+    }
+    div.wpcf7-validation-errors, div.wpcf7-acceptance-missing, div.wpcf7-mail-sent-ok {
+        border: none;
+        font-size: 1.6rem;
+    }
+    .wpcf7-response-output {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+    .wpcf7 {
+        margin: 0 auto;
+        @include media('<=tablet') {
+            text-align: center;
+        }
+    }
+    form {
+        padding-top: 3.6rem;
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        .col-6,
+        .col-12 {
+            @include media('<=large') {
+                margin-bottom: 1.8rem;
+            }
+        }
+        .row {
+            margin-bottom: 2.4rem;
+            @include media('<=large') {
+                margin-bottom: 0rem;
+            }
+        }
+
+        textarea,
+        input[type=submit] {
+            width: 100%;
+        }
+
+        textarea,
+        input[type=submit],
+        input {
+            border: 1px solid #cccccc;
+            padding: 1rem 2rem;
+            outline: none;
+            background-color: #fff;
+            width: 100%;
+        }
+
+        input[type=submit] {
+            background-color: $color-darkblue;
+            color: #fff;
+            transition: 0.5s ease;
+            font-family: benton-sans, sans-serif;
+            font-weight: 600;
+            font-size: 1.5rem;
+            padding: 1.6rem;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            text-transform: uppercase;
+        }
+        .form-separator{
+            border-top: 1px solid #cccccc;
+            width: 100%;
+            margin-top: 3.2rem;
+            height: 3.2rem;
+        }
+    }
+        min-height: 100vh;
+        background-image: url('img/content/form-bg.png');
+        background-size: cover;
+        h1, h2{
+            font-family: benton-sans, sans-serif;
+            font-weight: 600;
+            font-style: medium;
+       
+        }
+        p, ul, li, h4{
+            font-family: 'Akrobat Regular', sans-serif;
+            strong{
+                font-family: 'Akrobat Bold', sans-serif;
+            }
+        }
+        ul{
+            margin-bottom: 5.2rem;
+        }
+        .content{
+            padding: 6vh 0vh;
+        }
+        .text{
+            padding-top: 8vh;
+        }
+        h1{
+            font-size: 5.6rem;
+            line-height: 6.0rem;
+        }
+        h2{
+            font-size: 2.4rem;
+            line-height: 5.2rem;
+            border-bottom: 1px solid black;
+        }
+        h4{
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            &:after{
+                content: '';
+                border-bottom: 1px solid black;
+                display: inline-block;
+                height: 2px;
+                width: calc(100% - 20.4rem);
+                margin-left: 2rem;
+            }
+        }
+        p, li{
+            font-size: 2.2rem;
+            line-height: 2.6rem;
+        }
+        li{
+            margin: 2rem 0rem;
+         
+            &:before{
+                content: '';
+                display: inline-block;
+                background-image: url('img/icons/true-icon.png');
+                background-repeat: no-repeat;
+                height: 21px;
+                width: 21px;
+                margin-right: 0.8rem;
+            }
+        }
+        p{
+            margin-top: 3.2rem;
+        }
+        .logos{
+            text-align: center;
+            .logo-container{
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0rem 0.8rem;
+                img{
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+}
+
+
 #Footer{
     background-color: $color-darkblue;
     padding: 2.4rem;
@@ -848,67 +1017,3 @@ p{
     }
 }
 
-#infosForm{
-    min-height: 100vh;
-    background-image: url('img/content/form-bg.png');
-    background-size: cover;
-    h1, h2{
-        font-family: benton-sans, sans-serif;
-        font-weight: 600;
-        font-style: medium;
-   
-    }
-    p, ul, li, h4{
-        font-family: 'Akrobat Regular', sans-serif;
-        strong{
-            font-family: 'Akrobat Bold', sans-serif;
-        }
-    }
-    ul{
-        margin-bottom: 5.2rem;
-    }
-    .content{
-        padding-top: 12vh;
-    }
-    h1{
-        font-size: 5.6rem;
-        line-height: 6.0rem;
-    }
-    h2{
-        font-size: 2.4rem;
-        line-height: 5.2rem;
-        border-bottom: 1px solid black;
-    }
-    h4{
-        font-size: 1.8rem;
-        text-transform: uppercase;
-        &:after{
-            content: '';
-            border-bottom: 1px solid black;
-            display: inline-block;
-            height: 2px;
-            width: calc(100% - 20.4rem);
-            margin-left: 2rem;
-        }
-    }
-    p, li{
-        font-size: 2.2rem;
-        line-height: 2.6rem;
-    }
-    li{
-        margin: 2rem 0rem;
-     
-        &:before{
-            content: '';
-            display: inline-block;
-            background-image: url('img/icons/true-icon.png');
-            background-repeat: no-repeat;
-            height: 21px;
-            width: 21px;
-            margin-right: 0.8rem;
-        }
-    }
-    p{
-        margin-top: 3.2rem;
-    }
-}

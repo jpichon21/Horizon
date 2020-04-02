@@ -5,28 +5,47 @@
     <div class="content col-9 centered">
 
         <div class="columns">
+            <div class="col-5 text">
+            <?php $infos = get_field('demande_infos');?>
+                <h1><?php echo $infos['titre']; ?></h1>
+                <p><?php echo $infos['description_1']; ?></p>
+                <p><?php echo $infos['description_2']; ?></p>
 
-            <div class="col-5">
-                <h1>Obtenez votre audit sur-mesure</h1>
-                <p>Nous vous proposons un audit gratuit et sur-mesure de votre stratégie social media, content et publicitaire</p>
-
-                <p>il se compose ainsi :<br>
-                <strong>analyse des points forts, axes d'amélioration, best practices et une première piste de recommandations.</strong></p>
-
-                <h2>Comment bénéficier de cet audit ?</h2>
+                <h2><?php echo $infos['titre_2']; ?></h2>
 
                     <ul>
                     
-                        <li> Remplissez le formulaire </li>
-                        <li> Un conseiller vous contact pour discuter de vos objectifs</li>
-                        <li> Nous vous présentons votre audit avec des pistes de recommandations </li>
+                        <li> <?php echo $infos['element_1']; ?> </li>
+                        <li> <?php echo $infos['element_2']; ?> </li>
+                        <li> <?php echo $infos['element_3']; ?> </li>
 
                     </ul>
 
                 <h4>Ils nous font confiance </h4>
+
+                <div class="logos">
+                    <div class="logo-container">
+                        <img src="<?php echo esc_url($infos['logo_1']['url']); ?>"  />
+                    </div>
+                    <div class="logo-container">
+                        <img src="<?php echo esc_url($infos['logo_2']['url']); ?>"  />
+                    </div>
+                    <div class="logo-container">
+                        <img src="<?php echo esc_url($infos['logo_3']['url']); ?>"  />
+                    </div>
+                    <div class="logo-container">
+                        <img src="<?php echo esc_url($infos['logo_4']['url']); ?>"  />
+                    </div>
+                        
+                </div>
             </div>
 
-            <div class="col-6">
+            <div class="col-1 gutter"></div>
+
+            <div class="col-5 form">
+         
+                        <?php echo get_field('contact_form_2'); ?>
+            
 
             </div>
             
