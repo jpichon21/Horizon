@@ -251,7 +251,7 @@ p{
         color: #fff;
         transition: 0.5s ease;
         &:active, &:hover, a:focus{
-            background-color: #fff;
+            background-color: #f4f4f4;
             color: $color-darkblue;
             transition: 0.5s ease;
         }
@@ -287,7 +287,7 @@ p{
     header{
         nav{
             height: 80px;
-            padding: 1.2rem 0px;
+            padding: 2.2rem 0px;
             ul{
                 float: right;
                 li{
@@ -389,9 +389,12 @@ p{
         margin-bottom: 2.2rem;
     }
     p, li{
-        font-family: 'Montserrat Light', sans-serif;
+        font-family: 'Montserrat Regular', sans-serif;
         font-size: 1.6rem;
         line-height: 2.4rem;
+        &.light{
+            font-family: 'Montserrat Light', sans-serif;
+        }
     }
 
 }
@@ -410,6 +413,9 @@ p{
     img{
         max-width: 16rem;
         margin: 0rem 0.2rem;
+        @include media('<=xxlarge') {
+            margin: 0rem 0.1rem;
+        }
     }
     .content{
         padding: 8.9rem 0rem;
@@ -490,7 +496,7 @@ p{
         }
     }
     .hybrid{
-        margin-top: 9rem;
+        margin-top: 4rem;
         @include media('<=mobile') {
             margin-top: 0rem;
         }
@@ -711,6 +717,9 @@ p{
             width: 100%;
         }
     }
+    .columns{
+        margin: 0rem;
+    }
 }
 
 #Contact{
@@ -796,9 +805,9 @@ p{
             font-family: benton-sans, sans-serif;
             font-weight: 600;
         }
-    }
-    @include media('<=mobile') {
-        padding: 6rem 0rem;
+        @include media('<=large') {
+            margin-top: 6.4rem;
+        }
     }
     .col-6{
         @include media('<=mobile') {
@@ -812,12 +821,21 @@ p{
     .wpcf7-response-output {
         margin: 0 auto;
         width: 100%;
-        text-align: center;
+        text-align: right;
+        color: #fff!important;
+        margin-top: 1.6rem;
+        @include media('<=tablet') {
+            text-align: center;
+            color: $color-darkblue!important;
+        }
+
     }
     .wpcf7 {
         margin: 0 auto;
-        @include media('<=tablet') {
-            text-align: center;
+    }
+    .col-6,.col-5{
+        @include media('<=large') {
+            width: 100%;
         }
     }
     form {
@@ -894,7 +912,7 @@ p{
             padding: 6vh 0vh;
         }
         .text{
-            padding-top: 8vh;
+            padding-top: 3vh;
         }
         h1{
             font-size: 5.6rem;
@@ -923,6 +941,8 @@ p{
         }
         li{
             margin: 2rem 0rem;
+            position: relative;
+            padding-left: 3.6rem;
          
             &:before{
                 content: '';
@@ -931,7 +951,9 @@ p{
                 background-repeat: no-repeat;
                 height: 21px;
                 width: 21px;
-                margin-right: 0.8rem;
+                position: absolute;
+                top: 0;
+                left: 0;
             }
         }
         p{

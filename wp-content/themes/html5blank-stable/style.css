@@ -175,7 +175,7 @@ p strong {
     color: #fff;
     transition: 0.5s ease; }
     .button.black-button:active, .button.black-button:hover, .button.black-button a:focus {
-      background-color: #fff;
+      background-color: #f4f4f4;
       color: #181d25;
       transition: 0.5s ease; }
 
@@ -197,7 +197,7 @@ p strong {
     font-style: italic; }
   #headerHero header nav {
     height: 80px;
-    padding: 1.2rem 0px; }
+    padding: 2.2rem 0px; }
     #headerHero header nav ul {
       float: right; }
       #headerHero header nav ul li {
@@ -282,9 +282,11 @@ p strong {
   margin-bottom: 2.2rem; }
 
 .content p, .content li {
-  font-family: 'Montserrat Light', sans-serif;
+  font-family: 'Montserrat Regular', sans-serif;
   font-size: 1.6rem;
   line-height: 2.4rem; }
+  .content p.light, .content li.light {
+    font-family: 'Montserrat Light', sans-serif; }
 
 #References1 {
   background: #181d25; }
@@ -297,6 +299,9 @@ p strong {
   #References1 img {
     max-width: 16rem;
     margin: 0rem 0.2rem; }
+    @media (max-width: 1440px) {
+      #References1 img {
+        margin: 0rem 0.1rem; } }
   #References1 .content {
     padding: 8.9rem 0rem; }
     @media (max-width: 768px) {
@@ -358,7 +363,7 @@ p strong {
         #Cibles .content h2 {
           margin-bottom: 3.45rem; } }
   #Cibles .hybrid {
-    margin-top: 9rem; }
+    margin-top: 4rem; }
     @media (max-width: 435px) {
       #Cibles .hybrid {
         margin-top: 0rem; } }
@@ -528,6 +533,8 @@ p strong {
   @media (max-width: 435px) {
     #Forces .col-4 {
       width: 100%; } }
+  #Forces .columns {
+    margin: 0rem; }
 
 #Contact {
   background-color: #fcd400;
@@ -601,9 +608,9 @@ p strong {
     #infosForm .form label {
       font-family: benton-sans, sans-serif;
       font-weight: 600; }
-  @media (max-width: 435px) {
-    #infosForm {
-      padding: 6rem 0rem; } }
+    @media (max-width: 1024px) {
+      #infosForm .form {
+        margin-top: 6.4rem; } }
   @media (max-width: 435px) {
     #infosForm .col-6 {
       width: 100%; } }
@@ -613,12 +620,18 @@ p strong {
   #infosForm .wpcf7-response-output {
     margin: 0 auto;
     width: 100%;
-    text-align: center; }
+    text-align: right;
+    color: #fff !important;
+    margin-top: 1.6rem; }
+    @media (max-width: 768px) {
+      #infosForm .wpcf7-response-output {
+        text-align: center;
+        color: #181d25 !important; } }
   #infosForm .wpcf7 {
     margin: 0 auto; }
-    @media (max-width: 768px) {
-      #infosForm .wpcf7 {
-        text-align: center; } }
+  @media (max-width: 1024px) {
+    #infosForm .col-6, #infosForm .col-5 {
+      width: 100%; } }
   #infosForm form {
     padding-top: 3.6rem;
     font-size: 1.6rem;
@@ -673,7 +686,7 @@ p strong {
   #infosForm .content {
     padding: 6vh 0vh; }
   #infosForm .text {
-    padding-top: 8vh; }
+    padding-top: 3vh; }
   #infosForm h1 {
     font-size: 5.6rem;
     line-height: 6.0rem; }
@@ -695,7 +708,9 @@ p strong {
     font-size: 2.2rem;
     line-height: 2.6rem; }
   #infosForm li {
-    margin: 2rem 0rem; }
+    margin: 2rem 0rem;
+    position: relative;
+    padding-left: 3.6rem; }
     #infosForm li:before {
       content: '';
       display: inline-block;
@@ -703,7 +718,9 @@ p strong {
       background-repeat: no-repeat;
       height: 21px;
       width: 21px;
-      margin-right: 0.8rem; }
+      position: absolute;
+      top: 0;
+      left: 0; }
   #infosForm p {
     margin-top: 3.2rem; }
   #infosForm .logos {
