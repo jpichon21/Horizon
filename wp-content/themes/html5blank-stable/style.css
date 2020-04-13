@@ -254,7 +254,7 @@ p strong {
       line-height: 2.2rem; }
       @media (max-width: 435px) {
         #headerHero #bottomHeaderBanner p {
-          padding: 0rem 4rem;
+          padding: 0.6rem 4rem;
           margin-bottom: 0rem; } }
     #headerHero #bottomHeaderBanner p:before {
       content: '•';
@@ -298,10 +298,7 @@ p strong {
       margin: 1.2rem auto; } }
   #References1 img {
     max-width: 16rem;
-    margin: 0rem 0.2rem; }
-    @media (max-width: 1440px) {
-      #References1 img {
-        margin: 0rem 0.1rem; } }
+    margin: 0rem 0.1rem; }
   #References1 .content {
     padding: 8.9rem 0rem; }
     @media (max-width: 768px) {

@@ -10,7 +10,8 @@
     <div id="mainContainer" class="container">
 
         <!--------------------->
-        <section id="headerHero">
+        <?php $herobg = get_field('hero_background');?>
+        <section id="headerHero" style="background-image: url(<?php echo $herobg['url']; ?>);">
             <div class="columns col-9 centered">
                 <header class="col-12">
                     <nav id="menuNav" class="column col-12 centered">
