@@ -123,6 +123,9 @@ a:hover {
   .white a:visited, .white a:focus, .white a:active, .white a:hover {
     color: #fff; }
 
+.darkblue {
+  color: #3b4351; }
+
 .italic {
   font-style: italic; }
 

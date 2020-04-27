@@ -32,7 +32,7 @@
 
                 <div class="content col-12 centered">
                     <h1 class="yellow"><?php echo get_field('titre_header'); ?></h1>
-                    <p class="white"><?php echo get_field('description_header'); ?></p>
+                    <p class="darkblue"><?php echo get_field('description_header'); ?></p>
 
                     <?php $cta_header = get_field('cta_header');?>
                     <a class="button white-button" href="#Offres"><?php echo $cta_header['texte_cta']; ?></a>
