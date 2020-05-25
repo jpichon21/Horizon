@@ -187,7 +187,8 @@ p strong {
   background-image: url("img/content/asset-_01.jpg");
   background-size: cover;
   min-height: 100vh;
-  position: relative; }
+  position: relative;
+  background-attachment: fixed; }
   @media (max-width: 435px) {
     #headerHero #menuNav {
       text-align: center; } }

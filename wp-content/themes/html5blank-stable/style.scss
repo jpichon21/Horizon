@@ -272,6 +272,7 @@ p{
     background-size: cover;
     min-height: 100vh;
     position: relative;
+    background-attachment: fixed;
     #menuNav{
         @include media('<=mobile') {
             text-align: center;

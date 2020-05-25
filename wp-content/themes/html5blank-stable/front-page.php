@@ -452,6 +452,29 @@
  
                 </div>
 
+                <div class="row columns">
+
+                    <div class="col-4 text-content">
+                    <?php $force4 = get_field('force_4');?>
+                        <h4><?php echo $force4['titre']; ?></h4>
+                        <p><?php echo $force4['description']; ?></p>
+                    </div>
+
+                    <div class="col-4 text-content">
+                    <?php $force5 = get_field('force_5');?>
+                        <h4><?php echo $force5['titre']; ?></h4>
+                        <p><?php echo $force5['description']; ?></p>
+                    </div>
+
+                    <div class="col-4 text-content">
+                    <?php $force6 = get_field('force_6');?>
+                        <h4><?php echo $force6['titre']; ?></h4>
+                        <p><?php echo $force6['description']; ?></p>
+                    </div>
+
+
+                </div>
+
             </div>
             </section>
             <!--------------->
